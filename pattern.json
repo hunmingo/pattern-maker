@@ -1,0 +1,10 @@
+{
+  "type": "triangle",
+  "params":{
+    "color": "#578180",
+    "halfLength": 200
+  },
+  "children": [
+
+  ]
+}

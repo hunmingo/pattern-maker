@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="_/base.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#tabs" ).tabs({
+        activate: function( event, ui ) {
+          if(ui.newTab.data("name") === "shapePalette"){}
+          else if (ui.newTab.data("name") === "pattern1"){
+            drawPattern($.extend(true, {}, node));
+
+          }
+        }
+      });
+    });
+    </script>
+  </head>
+  <body>
+  <div id="tabs">
+  <ul>
+    <li data-name="shapePalette"><a href="#tabs-1">Shape Palette</a></li>
+    <li data-name="pattern1"><a href="#tabs-2">Pattern1</a></li>
+    <li><a href="#tabs-3">Pattern2</a></li>
+  </ul>
+    <div id="tabs-1">
+      <div id="palette" class="fbox"></div>
+      <div id="layerPanel" class="layerPanel"></div>
+      <div class="container">
+        <div id="chart"></div>
+      </div>
+    </div>
+
+    <div id="tabs-2">
+      <p>pattern1</p>
+      <div id="pattern"></div>
+
+    </div>
+
+    <div id="tabs-3">
+      <p>pattern2</p>
+    </div>
+  </div>
+
+    <script src="./node_modules/d3/d3.js"></script>
+    <script src="./js/Vector2.js"></script>
+    <script src="./js/Primitives.js"></script>
+    <script src="Script.js"></script>
+    <script src="patternCreator.js"></script>
+  </body>
+</html>
