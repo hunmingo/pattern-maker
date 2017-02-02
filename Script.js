@@ -2,7 +2,7 @@
 var cos30 = 0.866,
     tan6030 = 1.1547,
     w = 800,
-    h = 600,
+    h = 800,
     //layerIdx = 0,
     layerPanelWidth,
     initSize = 180,
